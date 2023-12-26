@@ -1,0 +1,110 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    color: var(--black);
+}
+
+body {
+    background-color: var(--yellow);
+    display: grid;
+    place-content: center;
+    min-height: 100svh;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.preview-card {
+    background-color: var(--white);
+    border-radius: 22px;
+    padding: 1.3rem;
+    max-width: 23em;
+    box-shadow: 2px 2px 0 3px var(--black);
+    border:  1px solid var(--black);
+
+    >img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    > h1 {
+        font-size: 1rem;
+        font-weight: 800;
+        background-color: var(--yellow);
+        padding: 0.3rem;
+        border-radius: 3px;
+        max-width: fit-content;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        margin-bottom: 0.8rem;
+    }
+
+    & h2 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 0.9rem;
+    }
+
+    & a {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 0.7em;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--yellow);
+        }
+    }
+
+    & p {
+        color: var(--grey);
+        line-height: 1.5;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+
+    & address {
+        font-style: normal;
+        font-size: 0.8rem;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+
+        >img {
+            aspect-ratio: 1;
+            width: 2rem;
+            margin-right: 0.7em;
+        }
+    }
+
+}
+
+.attribution { 
+    margin-top: 2rem;
+    font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
